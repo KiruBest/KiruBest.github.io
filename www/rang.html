@@ -1,0 +1,265 @@
+<!doctype html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Рейтинг</title>
+	<link rel="stylesheet" href="../css/style.css">
+	<link rel="stylesheet" href="../css/bootstrap.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=STIX+Two+Math&display=swap" rel="stylesheet"> 
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	<link rel="icon" type="image/png" href="https://e7.pngegg.com/pngimages/619/180/png-clipart-tesla-model-x-tesla-model-3-car-tesla-model-s-tesla-monochrome-car.png"/>
+</head>
+<body>
+	<nav class="navbar-nav navbar navbar-expand-lg navbar-light" id="nav">
+		<div class="container">
+			<header class="navbar-header clearfix" id="home">
+				<a href="#home" class="navbar-brand text-uppercase fw-bold" id="site-name">CarSharing&nbsp<i class="fa fa-car"></i></a>
+				<div class="float-end" style="padding-left: 2rem; padding-top: .4rem;">
+					<button type="button" class="navbar-toggler " data-bs-toggle="collapse" data-bs-target=".navbar-collapse">
+						<span class="navbar-toggler-icon"></span>
+					</button>
+				</div>
+			</header>
+			
+			<div class="navbar-collapse collapse justify-content-end" id="navigation">
+			<ul class="nav navbar-nav nav-tabs align-items-start">
+				<li class="nav-item">
+				  <a class="nav-link  p-1" href="main.html"><i class="fa fa-home" aria-hidden="true"></i>
+					Главная</a>
+				</li>
+				<li class="nav-item">
+				  <a class="nav-link p-1"  href="cart.html">Карта</a>
+				</li>
+				<li class="nav-item">
+				  <a class="nav-link p-1" href="first.html">Тарифы</a>
+				</li>
+				<li class="nav-item">
+				  <a class="nav-link active p-1" aria-current="page" href="#">Рейтинг</a>
+				</li>
+				<li class="nav-item">
+				  <a class="nav-link p-1" href="fb.html">Отзывы</a>
+				</li>
+				<li class="nav-item">
+				  <a class="nav-link p-1" href="quest.html">FAQ</a>
+				</li>
+			  </ul>
+			</div>
+		</div>
+	</nav>
+	
+	<div class="container my-3 bg-white">
+		<h1 class="h3 pb-3">Рейтинг, баллы и уровни</h1>
+		<ul class="nav nav-pills nav-fill mb-3" id="pills-tab" role="tablist">
+		  <li class="nav-item" role="presentation">
+			<button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">Что такое рейтинг?</button>
+		  </li>
+		  <li class="nav-item" role="presentation">
+			<button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">Что дает рейтинг?</button>
+		  </li>
+		  <li class="nav-item" role="presentation">
+			<button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact" aria-selected="false">Как можно заработать баллы?</button>
+		  </li>
+		</ul>
+		<div class="tab-content" id="pills-tabContent">
+		  <div class="tab-pane fade show active table-responsive container" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+			<h2>Что такое рейтинг?</h2>
+			<p class="fw-bold">Рейтинговая система Carsharing направлена на повышение лояльности клиентов сервиса за счет предоставления дополнительных скидок на использование сервиса, а также иных привилегий.</p>
+			<p>При достижении каждого уровня для вас становятся доступными все больше и больше дополнительных условий использования в виде скидок на поездки, увеличения времени бесплатного бронирования, доступа к новым моделям автомобилей и многое другое.</p>
+			<p>Для достижения каждого уровня необходимо быть старше 23 лет, определенное количество рейтинговых баллов, а также интенсивность использования сервиса:</p>
+			<table class="table table-hover align-middle">
+			  <thead>
+				<tr>
+				  <th scope="col">Уровень</th>
+				  <th scope="col">Количество баллов, необходимое для перехода на уровень</th>
+				  <th scope="col">Минимальное кол-во поездок*, необходимое для перехода на уровень</th>
+				</tr>
+			  </thead>
+			  <tbody>
+				<tr>
+				  <th scope="row">1</th>
+				  <td>100</td>
+				  <td>1 поездка с момента перехода на уровень 0</td>
+				</tr>
+				<tr>
+				  <th scope="row">2</th>
+				  <td>210</td>
+				  <td>1 поездка с момента перехода на уровень 1</td>
+				</tr>
+				<tr>
+				  <th scope="row">3</th>
+				  <td>330</td>
+				  <td>4 поездки с момента перехода на уровень 2</td>
+				</tr>
+				<tr>
+				  <th scope="row">4 <span class="text-uppercase bg-success pro">pro</span></th>
+				  <td>450</td>
+				  <td>4 поездки с момента перехода на уровень 3</td>
+				</tr>
+			  </tbody>
+			</table>
+			<p class="text-muted">* В расчетах рейтинга учитываются поездки, стоимость которых не менее 50 рублей, а протяженность не менее 1 км.</p>
+			<p class="text-muted">** Минимальный требуемый возраст пользователя для перехода по уровням рейтинга – 23 года.</p>
+		  </div>
+		  
+		  <div class="tab-pane fade container mb-5" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+			<h2>Что дает рейтинг?</h2>
+			<p class="fw-bold">Рейтинг определяет лояльность пользователя к сервису и сервиса к пользователю.</p>
+			<p>На каждом положительном уровне рейтинга для пользователя открываются новые возможности.</p>
+			<p>В случае отрицательного рейтинга - применяются повышенные коэффициенты к тарифам.</p>
+			<h3 class="text-center text-success">Положительный рейтинг</h3>
+			<table class="table table-hover align-middle">
+			  <thead>
+				<tr>
+				  <th scope="col">Уровень</th>
+				  <th scope="col">Доступные возможности</th>
+				</tr>
+			  </thead>
+			  <tbody>
+				<tr>
+				  <th scope="row">1</th>
+				  <td>пока вы начинающий пользователь Ситидрайв, но для аренды уже доступны автомобили: Smart, Nissan Qashqai, Renault Kaptur, Renault Arkana, WV Polo, Kia Rio X-line, Kia Soul, Hyundai Creta, Hyundai Soliaris и Nissan X-trail</td>
+				</tr>
+				<tr>
+				  <th scope="row">2</th>
+				  <td><p>скидка 1% на все поездки</p>добавились к доступным для аренды автомобили: Smart forfour soft-top, Smart fortwo cabrio, Nissan X-trail , BMW Active tourer, Mercedes A-180</td>
+				</tr>
+				<tr>
+				  <th scope="row">3</th>
+				  <td><p>скидка 3% на все поездки</p>добавились к доступным для аренды автомобили: Mercedes A-200</td>
+				</tr>
+				<tr>
+				  <th scope="row">4 <span class="text-uppercase bg-success pro">pro</span></th>
+				  <td><p>скидка 4% на все поездки</p>добавились к доступным для аренды автомобили: BMW X2 <p><span style="font-size: 0.8rem;" class="text-uppercase border rounded-3"> new</span> скидка 25% на проезд по платной дороге на автомобиле с транспондером</p></td>
+				</tr>
+			  </tbody>
+			</table>
+			
+			<h3 class="text-center text-danger">Отрицательный рейтинг</h3>
+			<table class="table table-hover align-middle">
+			  <thead>
+				<tr>
+				  <th scope="col">Уровень / баллы</th>
+				  <th scope="col">Повышенные тарифы</th>
+				</tr>
+			  </thead>
+			  <tbody>
+				<tr>
+				  <th scope="row">-1</th>
+				  <td><p>Тариф Использование – 12 рублей/минута</p><p>Тариф Парковка – 3 рубля/минута</p><p>20 минут бронирования автомобиля – 3 рубля/минута</p></td>
+				</tr>
+				<tr>
+				  <th scope="row">-2</th>
+				  <td><p>Тариф Использование – 13 рублей/минута</p><p>Тариф Парковка – 4 рубля/минута</p><p>20 минут бронирования автомобиля – 4 рубля/минута</p></td>
+				</tr>
+				<tr>
+				  <th scope="row">меньше -200</th>
+				  <td>Блокировка аккаунта</td>
+				</tr>
+			  </tbody>
+			</table>
+		  </div>
+		  
+		  <div class="tab-pane fade pb-5" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">
+			<h2>Как можно заработать баллы?</h2>
+			<p>Баллы начисляются за поездки по всем тарифам: поминутному, пакетным, а также по абонементам. А ещё баллы можно получить за приглашение друзей и даже за поездки на такси через приложение Carsharing.</p>
+			<div>
+				<h3><span class="bold">Поездки по поминутному и пакетным тарифам</span></h3>
+				<p class="default small">Баллы начисляются за каждую поездку. Количество баллов зависит от стоимости поездки, количества поездок за предыдущий месяц, а также стиля вождения.</p>
+				<p class="default small">Баллы рейтинга начисляются за все поездки, стоимость которых составляет не менее 50 рублей и протяженностью не менее 1 км.</p>
+				<p class="default small green"><span class="bold green">Стоимость поездки</span></p>
+				<p class="default small">Чем выше стоимость поездки, тем больше баллов вы получите</p>
+				<p class="default small green"><span class="bold green">Количество поездок</span></p>
+				<p class="default small">Чем больше поездок вы совершите за месяц, тем больше баллов за поездки будете получать в следующем.</p>
+				<p class="default small green"><span class="bold green">Оценка вождения</span></p>
+				<p class="default small">Мы анализируем стиль и манеру вождения каждого пользователя на основе данных, собранных с помощью оборудования автомобилей Ситидрайв. Умный алгоритм может начислить вам 2 дополнительных балла к поездке за спокойную езду без нарушений правил дорожного движения. При этом, за резкие торможения и ускорения, а также значительное превышение скорости можно потерять баллы рейтинга. </p>
+			</div>	
+			
+			<div>
+				<h3><span class="bold">Поездки по абонементу</span></h3>
+				  <p class="default small">Баллы начисляются в зависимости от того, сколько минут абонемента было использовано в поездке.</p>
+				  <p class="default small">Если использованы все минуты из абонемента, то баллы начисляются по такой схеме:</p>
+				  <p class="default small">
+					<span class="block">Абонемент "60 минут": 60 минут = 12 баллов рейтинга</span>
+					<span class="block">Абонемент "30 минут": 30 минут = 8 баллов рейтинга</span>
+				  </p>
+				  <p class="default small">Если вы продолжили поездку по поминутному тарифу, то мы сделаем 2 начисления: баллы рейтинга за использование абонемента и за поминутную часть поездки.</p>
+				  <p class="default small">Если вы израсходовали лишь часть минут по абонементу, то количество баллов рейтинга будет рассчитано пропорционально потраченным минутам.</p>
+			</div>
+			
+			<div>
+				<h3><span class="bold">За что еще можно получить рейтинговые баллы?</span></h3>
+				  <p class="default small green"><span class="bold green">За приглашенных друзей</span></p>
+				  <p class="default small">За каждого приглашенного друга, совершившего поездку с Ситидрайв, вы получаете 10 рейтинговых баллов.</p>
+			</div>
+			
+			<div>
+				<h3><span class="bold">За что можно потерять баллы?</span></h3>
+				  <p class="default small">Рейтинг может не только расти, но и падать. Это может произойти по нескольким причинам:</p>
+				  <p class="default small green"><span class="bold green">Задержка оплаты</span></p>
+				  <p class="default small">Если вы просрочили оплату поездки на Ситидрайв или на такси, любого штрафа или других платежей, то за каждые 24 часа просрочки оплаты будет списываться по 2 балла рейтинга.</p>
+				  <p class="default small green"><span class="bold green">Штрафы</span></p>
+				  <p class="default small">За каждый полученный штраф можно потерять баллы. Количество баллов зависит от суммы штрафа.</p>
+				  <p class="default small green"><span class="bold green">Эвакуация</span></p>
+				  <p class="default small">За первую эвакуацию машины Ситидрайва можно потерять от 15 до 100 баллов. Количество списанных баллов зависит от того, отказались ли вы от самостоятельного возврата автомобиля или нет. За все последующие эвакуации можно потерять от 25 до 100 баллов рейтинга.</p>
+				  <p class="default small green"><span class="bold green">ДТП</span></p>
+				  <p class="default small">Конечно, лучше вообще не попадать в ДТП. Однако случается всякое!</p>
+				  <p class="default small">За первое ДТП по вашей вине можно потерять до 50% всех баллов в зависимости от суммы ущерба. За последующие ДТП могут сгореть все баллы.</p>
+				  <p class="default small green"><span class="bold green">Оценка вождения</span></p>
+				  <p class="default small">За резкие торможения и ускорения, создание аварийных ситуаций на дороге, критичные превышения разрешенной скорости можно потерять от 1 до 5 баллов рейтинга за поездку.</p>
+			</div>
+		  </div>
+		</div>
+	</div>
+	
+		<footer class="bg-secondary" id="footer">
+		<div class="container pt-3">
+			<div class="row">
+				<div class="col-lg-3">
+					<a href="main.html#home" class="text-uppercase fw-bold link-none" id="footer-site-name">CarSharing&nbsp<i class="fa fa-car"></i></a>
+					<div class="mt-3">	
+						<a href="tel:+79234299584" id="tel">+7 (923) 429-95-84</a>
+						<a id="mail" href="mailto:ksc6@tpu.ru">ksc@tpu.ru</a>
+					</div>
+				</div>
+				
+				<div class="col-lg-9" id="footer-nav">
+					<ul class="nav nav-fill mt-2">
+						<li class="nav-item"><a href="main.html#how-use" class="nav-link">Как пользоваться?</a></li>
+						<li class="nav-item"><a href="main.html#pluses-name" class="nav-link">Преимущества</a></li>
+						<li class="nav-item"><a href="main.html#about-company" class="nav-link">О Компании</a></li>
+						<li class="nav-item"><a href="main.html#contacts" class="nav-link">Контакты</a></li>
+						<li class="nav-item"><a href="cart.html" class="nav-link">Карта</a></li>
+						<li class="nav-item"><a href="first.html" class="nav-link">Тарифы</a></li>
+						<li class="nav-item"><a href="rang.html" class="nav-link">Рейтинг</a></li>
+						<li class="nav-item"><a href="fb.html" class="nav-link">Отзывы</a></li>
+						<li class="nav-item"><a href="quest.html" class="nav-link">FAQ</a></li>
+					</ul>
+					<p class="mt-3">Carsgaring это удобный каршеринг, предлагающий поминутные и посуточные тарифы. Скачайте приложение, зарегистрируйтесь и путешествуйте по России. Carsharing является хорошей альтернативой классической аренде машин, такси а также собственному автомобилю. Воспользоваться Carsharing можно в Томске.</p>
+				</div>
+			</div>
+			
+			<div class="mt-5" id="social">
+				<center>
+					<a class="" href="https://vk.com/" target="_blank"><i class="icons fab fa-vk" aria-hidden="true"></i></a>
+					<a class="" href="https://www.instagram.com/" target="_blank"><i class="icons fab fa-instagram" aria-hidden="true"></i></a>
+					<a class="m-none" href="https://www.facebook.com/" target="_blank"><i class="icons fab fa-facebook" aria-hidden="true"></i>
+					</a>
+				</center>
+			</div>
+		</div>
+
+		<div class="mt-5" id="copy">
+			<center><span>&copyKiruBest</span></center>
+		</div>
+	</footer>
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>

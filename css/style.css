@@ -1,0 +1,233 @@
+/*----------------------- Main ------------------------------ */
+body{
+	color: white;
+	-webkit-font-smoothing: antialiased;
+	-webkit-overflow-scrolling: touch;
+}
+
+#nav{
+	background-color: #6c757d !important;
+}
+
+#nav a{
+	color: white;
+	font-weight: 520;
+}
+
+.active{
+	color: #2F4F4F !important;
+}
+
+#site-name{
+	font-size: 2rem;
+	margin: 0;
+}
+
+#site-name:hover{color:black;}
+
+#headwrap{
+	background: url(../media/head.png) no-repeat top center;
+	width: 100%;
+	min-height: 25rem;
+	text-align: left;
+	margin-bottom: 0;
+	
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+#headwrap h1{
+	margin-top: 1rem;
+	font-weight: 600;
+	font-size: 2.5rem;
+	min-height: 3.5rem;
+	color: white;
+	display: inline;
+}
+
+#headwrap h2{
+	color: white;
+}
+
+
+#main .row{
+	font-weight: 500;
+	font-size: 1.2rem;
+	font-family: 'STIX Two Math', serif;
+}
+
+#pluses li{
+	font-weight: 600;
+	font-size: 1.8rem;
+	margin-top: 1rem;
+}
+
+#pluses li:first-child{
+	font-weight: 600;
+	font-size: 1.8rem;
+	margin-top: 0;
+}
+
+.h2{
+	color: #2F4F4F;
+	font-weight: 1000 !important;
+}
+
+.mh-8{
+	min-height: 8rem;
+}
+
+.ss{
+	border-radius: 1rem;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+.ss:hover{
+	width: 21%;
+	-webkit-transition: all 0.3s ease;
+	-moz-transition: all 0.3s ease;
+	-o-transition: all 0.3s ease;
+	transition: all 0.3s ease;
+}
+
+.ss:last-child:hover{
+	width: 23%;
+	-webkit-transition: all 0.3s ease;
+	-moz-transition: all 0.3s ease;
+	-o-transition: all 0.3s ease;
+	transition: all 0.3s ease;
+}
+
+#manager img:hover{
+	-webkit-transform: scale(1.1);
+	-moz-transform: scale(1.1);
+	-o-transform: scale(1.1);
+	transform: scale(1.1);
+	-webkit-transition: all 0.1s ease;
+	-moz-transition: all 0.1s ease;
+	-o-transition: all 0.1s ease;
+	transition: all 0.1s ease;
+}
+
+#footer{
+	background-color: #adb5bd;
+	min-height: 22rem;
+}
+
+#footer-site-name{
+	font-size: 2rem;
+	margin: 0;
+	text-decoration: none;
+	color: white;
+}
+
+#footer-site-name:hover{
+	color: black;
+}
+
+#footer-nav a:hover{
+	color: black;
+	display: inline;
+}
+
+#footer-nav a{
+	color: white;
+	display: inline;
+}
+
+#footer-nav p{
+	color: white;
+}
+
+#tel{
+	text-decoration: none;
+	color: white;
+	font-size: 1.4rem;
+	margin-right: 5rem;
+}
+
+#tel:hover{color: black;}
+
+#mail{
+	text-decoration: none;
+	font-size: 1.4rem;
+	color: white;
+}
+
+#mail:hover{color: black;}
+
+#social a{
+	margin-right: 10%;
+}
+
+.circle{
+	background-color: #DCDCDC;
+	border-radius: .99rem;
+}
+
+.m-none{
+	margin-right: 0 !important;
+}
+
+.icons{
+	color: white;
+	font-size: 3rem;
+}
+
+.icons:hover{
+	color: black;
+	font-size: 3rem;
+}
+
+#copy{
+	color: white;
+	text-align: center;
+	font-style: 1.5rem;
+	font-weight: 800;
+	
+	padding-bottom: 1.5rem;
+}
+
+
+/*----------------------- Тарифы ------------------------------ */
+
+.carousel-caption{
+	background-color: rgba(169, 169, 169, 0.75);
+}
+
+/*----------------------- Рейтинг ------------------------------ */
+
+.pro{
+	font-size: 0.7rem;
+	color: white;
+}
+
+.green{
+	color: green;
+}
+
+.block{
+	display: block;
+}
+
+#pills-tab .active{
+	color: white !important;
+}
+
+/*----------------------- FAQ ------------------------------ */
+
+#quest a{
+	color: grey;
+}
+
+/*----------------------- Контакты ------------------------------ */
+
+#manager{
+	border: 0;
+	width: 75%
+}
